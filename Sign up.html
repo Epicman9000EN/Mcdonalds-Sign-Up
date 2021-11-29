@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mcdonalds Application</title>
+	<link rel="stylesheet" href="Sign up.css">
+	<script src="sign up.js"></script>
+  </head>
+  <body>
+    <mark>Mcdonalds Application</mark>
+	<h1 class="paragraph">Please fill out this application to apply for Mcdonalds</h1>
+	  <form>
+	    <div class="Text">
+	    <label for="First">Please enter your first name (Required)</label>
+	    <input type="textbox" id="First" name="First" class="Input" pattern="^[A-Z].{0,}[a-z]$" required>
+	    <br>
+	    <label for="Last">Please enter your last name (Required)</label>
+	    <input type="textbox" id="Last" name="Last" class="Input" pattern="^[A-Z].{0,}[a-z]$"required>
+	    <br>
+	    <label for="Birthday">Please enter your birthdate (Required)</label>
+  	    <input type="date" id="Birthday" name="Birthday" class="Input" required>
+	    <br>
+	    <label for="Email">Please enter your email (Required)</label>
+	    <input type="email" id="Email" name="Email" class="Input" required pattern="[/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/]">
+	    <br>
+	    <label for="Number">Please enter your number (Optional)></label>
+	    <input type="tel" id="Number" name="Number" class="Input" minlength="10" pattern=""\d{10}|\{\d{3}\}\d{3}-\d{4}|\{3}-\d{3}-\d{4}">
+	    <br>
+	    <label for="Password">Please enter a password (Required)</label>
+	    <input type="password" id="Password" name="Password" class="Input" minlength="8" pattern="^[A-Za-z].{0,}[0-9]$" required>
+		<br><br>
+		<button type="submit" onclick="buttonfunction()" class="Button"> submit! </button>
+	  </form>
+	</div>
+  </body>
+<html>
